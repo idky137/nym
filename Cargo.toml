@@ -353,7 +353,7 @@ smolmix = { version = "0.0.1", path = "smolmix/core" }
 smoltcp = "0.12"
 snow = "0.9.6"
 sphinx-packet = "=0.6.0"
-sqlx = "0.8.6"
+sqlx = "0.9.0-alpha.1"
 strum = "0.28.0"
 strum_macros = "0.28.0"
 subtle-encoding = "0.5"

@@ -34,7 +34,7 @@ workspace = true
 
 [target."cfg(not(target_arch = \"wasm32\"))".dependencies.sqlx]
 workspace = true
-features = ["runtime-tokio-rustls", "sqlite", "macros", "migrate", "time"]
+features = ["runtime-tokio", "tls-rustls", "sqlite", "macros", "migrate", "time"]
 
 [target."cfg(not(target_arch = \"wasm32\"))".dependencies.tokio]
 workspace = true
@@ -52,7 +52,8 @@ nym-compact-ecash = { workspace = true }
 [build-dependencies]
 anyhow = { workspace = true }
 sqlx = { workspace = true, features = [
-    "runtime-tokio-rustls",
+    "runtime-tokio",
+    "tls-rustls",
     "sqlite",
     "macros",
     "migrate",
